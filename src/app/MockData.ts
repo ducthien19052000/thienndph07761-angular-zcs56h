@@ -1,0 +1,75 @@
+  import {Product} from "./Product";
+
+  export const data:Product[]=[
+    {
+      id:1,
+      name :"Item1",
+      price:29.44,
+      desc:"Nooi dung san pham",
+    img: 'https://dummyimage.com/275x175/000/fff',
+      stattus:true,
+    },
+    {
+      id:2,
+      name :"Item2",
+      price:29.44,
+      desc:"Nooi dung san pham",
+      img: 'https://dummyimage.com/275x175/000/fff',
+       stattus:true,
+    },
+    {
+      id:3,
+      name :"Item3",
+      price:29.44,
+      desc:"Noi dung san pham",
+      img: 'https://dummyimage.com/275x175/000/fff',
+      stattus:true,
+    },
+     {
+      id:4,
+      name :"Item4",
+      price:29.44,
+      desc:"Noi dung san pham",
+      img: 'https://dummyimage.com/275x175/000/fff',
+      stattus:true,
+    },
+     {
+      id:5,
+      name :"Item5",
+      price:29.44,
+      desc:"Noi dung san pham",
+      img: 'https://dummyimage.com/275x175/000/fff',
+      stattus:true,
+    },
+     {
+      id:6,
+      name :"Item6",
+      price:29.44,
+      desc:"Noi dung san pham",
+      img: 'https://dummyimage.com/275x175/000/fff',
+      stattus:true,
+    }, {
+      id:7,
+      name :"Item7",
+      price:29.44,
+      desc:"Noi dung san pham",
+      img: 'https://dummyimage.com/275x175/000/fff',
+      stattus:true,
+    },
+     {
+      id:8,
+      name :"Item8",
+      price:29.44,
+      desc:"Noi dung san pham",
+      img: 'https://dummyimage.com/275x175/000/fff',
+      stattus:true,
+    },
+     {
+      id:9,
+      name :"Item9",
+      price:29.44,
+      desc:"Noi dung san pham",
+      img: 'https://dummyimage.com/275x175/000/fff',
+      stattus:true,
+    }
+  ]
