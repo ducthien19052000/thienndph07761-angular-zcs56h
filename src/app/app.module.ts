@@ -15,12 +15,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+
 import { AppRoutingModule } from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
+
 import { NavigationComponent } from './navigation/navigation.component';
 import { ServiceComponent } from './service/service.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, FormsModule, AppRoutingModule ],
+  imports:      [ BrowserModule, FormsModule, FormsModule, AppRoutingModule ,HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductAddComponent, NotFoundComponent, HomeComponent, ProductDetailComponent, ProductManagerComponent, NavigationComponent, ServiceComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
