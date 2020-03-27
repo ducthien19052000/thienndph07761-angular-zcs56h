@@ -1,1 +1,30 @@
 <app-navigation></app-navigation>
+<div class="container">
+<div class="row" style="margin-top: 100px">
+  <button class="btn btn-primary" routerLink="/product-add">Thêm sản phẩm</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Images</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Status</th>
+      <th scope="col">Desc</th>
+       <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td><img width="50px" height="50px" src="{{product.img}}" alt=""></td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.status ? 'Còn hàng': 'Hết hàng'}}</td>
+      <td>{{product.desc}}</td>
+       <td><button class="btn btn-primary" routerLink="/product/edit/:productID" >Edit</button></td>
+      <td><button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>

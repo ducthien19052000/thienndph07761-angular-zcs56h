@@ -21,10 +21,11 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { NavigationComponent } from './navigation/navigation.component';
 import { ServiceComponent } from './service/service.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, FormsModule, AppRoutingModule ,HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductAddComponent, NotFoundComponent, HomeComponent, ProductDetailComponent, ProductManagerComponent, NavigationComponent, ServiceComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductAddComponent, NotFoundComponent, HomeComponent, ProductDetailComponent, ProductManagerComponent, NavigationComponent, ServiceComponent, ProductEditComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
