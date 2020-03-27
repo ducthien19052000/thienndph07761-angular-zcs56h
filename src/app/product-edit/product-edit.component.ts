@@ -12,19 +12,19 @@ export class ProductEditComponent implements OnInit {
   product: Product;
   constructor(
     private productService:ProductService,
-    private route : ActivatedRoute,
+    private rout : ActivatedRoute,
     private router: Router
   ) { }
 
   ngOnInit() {
     this.getProduct();
   }
-  getProduct() {
-    this.route.params.subscribe(param => {
-      this.productService.getProduct(param.productId).subscribe(data => {
-        this.product = data;
-      });
-    });
+  getProduct(){
+    this.rout.params.subscribe(param =>{
+      this.productService.getProduct(param.productId).subscribe(data=>{
+      this.product=data;
+      })
+    })
   }
   updateProduct(){
     this.productService.updateProduct(this.product).subscribe(data =>{

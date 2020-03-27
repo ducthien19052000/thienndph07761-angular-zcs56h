@@ -22,16 +22,16 @@
 							<label for="">Desc</label>
 							<input type="text" class="form-control" name="desc" [(ngModel)]="product.desc">
   </div>
-							<!-- <label for="exampleFormControlSelect1">Status</label>
+							<label for="exampleFormControlSelect1">Status</label>
 							<select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="product.stattus">
-      <option>true</option>
+      <option>Còn hàng</option>
       <option>Hết hàng</option>
      
-    </select> -->
-							<!-- <div class="form-group">
+    </select>
+							<div class="form-group">
 								<label for="">Image</label>
-								<input type="number" class="form-control" name="img">
-  </div> -->
+								<input type="text" class="form-control" name="img" [(ngModel)]="product.img">
+  </div>
 								<button type="submit" class="btn btn-primary" (click)="updateProduct()">Save</button>
 			</form>
 
