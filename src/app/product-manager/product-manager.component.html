@@ -21,7 +21,7 @@
       <td>{{product.price}}</td>
       <td>{{product.status ? 'Còn hàng': 'Hết hàng'}}</td>
       <td>{{product.desc}}</td>
-       <td><button class="btn btn-primary" routerLink="/product/edit/:productID" >Edit</button></td>
+       <td><button class="btn btn-primary" routerLink="/product/edit/{{product.id}}" >Edit</button></td>
       <td><button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button></td>
     </tr>
     </tbody>

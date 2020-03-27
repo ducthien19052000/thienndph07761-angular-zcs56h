@@ -22,4 +22,7 @@ export class ProductService {
     // let newObj = {id: 10, ...product};
     // this.products.push(newObj);
   }
+  updateProduct(product):Observable<Product[]>{
+    return this.http.put<Product[]>(`${this.api}/${product.id}`,product);
+  }
 }
